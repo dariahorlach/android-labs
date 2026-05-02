@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оберіть колір тексту:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <RadioButton android:id="@+id/rbRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Червоний" />
+        <RadioButton android:id="@+id/rbGreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Зелений" />
+        <RadioButton android:id="@+id/rbBlue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Синій" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть ваш текст сюди"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ОК" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Відкрити"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4CAF50" />
+
+</LinearLayout>
